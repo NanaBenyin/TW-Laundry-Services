@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Book a Laundry</title>
+  </head>
+  <body id="form_page">
+    <div class="Form">
+      <div class="title">
+        <div class="formHead">Booking</div>
+        <div class="formTitle">Book any of our services</div>
+
+        <form
+          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe1NKIIydxIGEoviKH4yYi3Jx_2NVrzGOdoSSQ-7y0ySzZXPQ/formResponse"
+          onsubmit="return checkForBlank()"
+        >
+          <div class="form_elements">
+            <div><span>Name</span></div>
+            <div>
+              <input
+                type="text"
+                name="entry.2034282546"
+                placeholder="Enter your full name"
+                id="name"
+                required
+              />
+            </div>
+          </div>
+          <div class="form_elements">
+            <div><span>How can we help you?</span></div>
+            <div>
+              <label for="Washing">
+                <input
+                  type="checkbox"
+                  id="Washing"
+                  name="entry.1476910235"
+                  value="Washing"
+                />
+                <span>Washing</span>
+              </label>
+            </div>
+            <div>
+              <label for="Ironing">
+                <input
+                  type="checkbox"
+                  id="Ironing"
+                  name="entry.1476910235"
+                  value="Ironing"
+                />
+                <span>Ironing</span>
+              </label>
+            </div>
+            <div>
+              <label for="Dry Cleaning">
+                <input
+                  type="checkbox"
+                  id="Dry_Cleaning"
+                  name="entry.1476910235"
+                  value="Dry_Cleaning"
+                />
+                <span>Dry Cleaning</span>
+              </label>
+            </div>
+            <div>
+              <label for="Carpet Cleaning">
+                <input
+                  type="checkbox"
+                  id="Carpet_Cleaning"
+                  name="entry.1476910235"
+                  value="Carpet_Cleaning"
+                />
+                <span>Carpet Cleaning</span>
+              </label>
+            </div>
+            <div>
+              <label for="Folding">
+                <input
+                  type="checkbox"
+                  id="Folding"
+                  name="entry.1476910235"
+                  value="Folding"
+                />
+                <span>Folding</span>
+              </label>
+            </div>
+          </div>
+          <div class="form_elements">
+            <div><span>Location</span></div>
+            <div>
+              <input
+                type="text"
+                name="entry.1006643006"
+                placeholder="Enter your location"
+                id="location"
+                required
+              />
+            </div>
+          </div>
+          <div class="form_elements">
+            <div><span>Phone Number</span></div>
+            <div>
+              <input
+                type="text"
+                name="entry.1645365316"
+                placeholder="Enter your Phone number"
+                id="number"
+                required
+              />
+            </div>
+          </div>
+          <button type="submit" class="btn">Book</button>
+        </form>
+      </div>
+    </div>
+    <div></div>
+    <script src="script.js"></script>
+  </body>
+</html>

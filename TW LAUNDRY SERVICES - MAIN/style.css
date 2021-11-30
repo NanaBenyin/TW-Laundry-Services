@@ -1,0 +1,555 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.Header {
+  display: flex;
+  justify-content: space-between;
+  padding: 4.5vh;
+}
+.Right-side {
+  display: flex;
+}
+.Link-wrapper {
+  margin-right: 2.5em;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+.logo {
+  font-weight: bold;
+  color: rgb(22, 132, 223);
+  font-size: 1.5em;
+}
+.Link-wrapper > .link > a {
+  text-decoration: none;
+  color: rgb(22, 132, 223);
+  transition: color 0.5s;
+  height: 22px;
+  font-size: 0.9em;
+}
+.Link-wrapper .link :hover {
+  border-bottom: 1px solid black;
+}
+.toggle-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  width: 30px;
+  height: 21px;
+  justify-content: space-between;
+}
+.toggle-button > .bar {
+  height: 3px;
+  width: 100%;
+  background-color: rgb(22, 132, 223);
+  border-radius: 10px;
+}
+.text {
+  background-image: url(Images/Hero\ -\ Image1.jpg);
+  opacity: 3;
+  height: 50vh;
+  color: white;
+  font-weight: bold;
+  word-spacing: 0.2em;
+  letter-spacing: 0.01em;
+  text-align: center;
+  font-size: 1em;
+  font-size: 3em;
+  padding-top: 30vh;
+  text-align: center;
+  text-shadow: 0 0 4px black;
+}
+.text > div {
+  font-size: 0.45em;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-weight: normal;
+  word-spacing: normal;
+  padding-top: 15px;
+  letter-spacing: normal;
+}
+.text > .launder-btn {
+  padding-top: 50px;
+  justify-content: center;
+}
+.text > div > a {
+  text-decoration: none;
+  font-size: 0.5em;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(22, 132, 223);
+  padding: 12px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border: none;
+  border-radius: 2em;
+  text-shadow: none;
+  transition: all 0.3s ease-in-out;
+}
+.text > div > a:hover {
+  background-color: black;
+}
+.headTwo {
+  font-weight: bold;
+  font-size: 1.3em;
+  padding-bottom: 10px;
+}
+.heading {
+  color: rgb(22, 132, 223);
+  padding-bottom: 15px;
+  font-size: 2em;
+  font-weight: none;
+}
+.About-sectionTwo > p {
+  font-size: 2em;
+  letter-spacing: 0.03em;
+}
+.headingTwo {
+  padding-bottom: 10px;
+  letter-spacing: 0.05em;
+}
+.About-sectionTwo {
+  text-align: center;
+  padding-top: 35px;
+}
+.Grid {
+  padding-bottom: 5vh;
+}
+.First-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 3vh;
+}
+.Second-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 3vh;
+  padding-left: 4vh;
+}
+.grids > div > img {
+  height: 10vh;
+  text-align: center;
+}
+.grids > div {
+  color: rgb(7, 160, 160);
+  text-align: center;
+}
+.grids > p {
+  text-align: center;
+}
+.Price-section {
+  background-color: whitesmoke;
+}
+.Testimonial-section {
+  background-image: url(Images/sincerely-media-gPnHi8AmO5k-unsplash.jpg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+.Testimonial-section > .what {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.Testimonial-section > p {
+  font-size: 1em;
+  padding-bottom: 0.5vh;
+}
+.Comments {
+  display: flex;
+  justify-content: space-evenly;
+}
+.Comments > div {
+  font-size: 0.9em;
+  padding: 2vh;
+}
+.Comments > div > div {
+  padding: 15px;
+}
+
+.testi-names {
+  font-weight: 500;
+}
+
+.Footer {
+  display: flex;
+  padding: 5vh;
+  padding-top: 10vh;
+  padding-left: 15vh;
+  justify-content: space-around;
+}
+.image > img {
+  height: 50vh;
+}
+.About {
+  padding: 6vh;
+}
+.About > div {
+  padding: 1.2vh;
+}
+.About > div > p {
+  font-size: 1.5em;
+}
+.About > div > a {
+  text-decoration: none;
+  background-color: rgb(22, 132, 223);
+  border-radius: 3em;
+  border: none;
+  padding: 8px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 0.8em;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+}
+.About > .btn {
+  padding-top: 2.5vh;
+}
+#back-to-top {
+  position: fixed;
+  bottom: 3px;
+  right: 3px;
+  text-decoration: none;
+  color: black;
+  padding: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: wheat;
+  border-radius: 0.5em;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+#back-to-top:hover {
+  padding: 0.6em 1.3em;
+}
+#back-to-top.visible {
+  opacity: 1;
+}
+#About_page {
+  background-color: whitesmoke;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.Description {
+  padding-bottom: 20px;
+  background-image: url(Images/sincerely-media-gPnHi8AmO5k-unsplash.jpg);
+  color: white;
+}
+.Description > div > h1 {
+  padding: 15px;
+  padding-bottom: 10px;
+}
+.Description > p {
+  padding: 15px;
+  color: rgb(212, 211, 211);
+}
+.about > div > div > h2 {
+  color: rgb(22, 132, 223);
+}
+.about > div > div > p {
+  justify-content: center;
+}
+.mission_and_vision {
+  height: 30vh;
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.mission_and_vision > div {
+  background-color: white;
+  border-radius: 3em;
+  padding: 40px;
+}
+.mission_and_vision > div {
+  text-align: center;
+}
+.foot {
+  background-color: rgb(53, 50, 50);
+  color: rgb(151, 148, 148);
+  font-size: 0.8em;
+}
+.First {
+  display: flex;
+  padding: 10px;
+}
+.First > div {
+  padding: 50px;
+  margin-left: 50px;
+}
+.only {
+  border-bottom: 1px solid rgb(151, 148, 148);
+}
+.First > div > h4 {
+  padding: 2px;
+}
+.First > div > div {
+  padding: 3px;
+}
+.Container > div > div > a {
+  text-decoration: none;
+  font-size: 0.5em;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(22, 132, 223);
+  padding: 12px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border: none;
+  border-radius: 2em;
+  text-shadow: none;
+  transition: all 0.3s ease-in-out;
+}
+.Container {
+  display: flex;
+}
+.Container > div {
+  padding: 80px;
+}
+#form_page {
+  background-image: url(images/nathan-dumlao-YbGMa1Jz1yY-unsplashnew.jpg);
+  padding: 10px;
+  backdrop-filter: blur(5px);
+  color: rgb(31, 26, 26);
+  font-weight: 700;
+}
+.Form {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 50vh;
+  margin: auto;
+  border-radius: 1em;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  opacity: 100%;
+}
+.Form > div {
+  padding: 40px;
+  padding-left: 20px;
+}
+.title > div {
+  padding-bottom: 5px;
+}
+.form_elements {
+  padding: 7px;
+}
+.form_elements > div {
+  padding-bottom: 5px;
+}
+.formHead {
+  font-weight: 800;
+  font-size: 2.5em;
+}
+.formTitle {
+  font-weight: 700;
+  font-size: 1.3em;
+}
+.form_elements > div > input {
+  border: none;
+  padding: 10px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+.btn {
+  border: none;
+  border-radius: 2em;
+  padding: 8px;
+  padding-left: 100px;
+  padding-right: 100px;
+  color: white;
+  background-color: black;
+  margin-top: 1.5vh;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+@media only screen and (max-width: 1100px) {
+  .mission_and_vision {
+    padding: 50px;
+    flex-direction: column;
+  }
+  .mission_and_vision > div {
+    padding: 5px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .bg-image {
+    width: 100%;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  .header {
+    width: 100%;
+  }
+  .Welcome {
+    width: 100%;
+  }
+  #About_page {
+    font-size: 0.8em;
+  }
+  .Description {
+    width: 100%;
+  }
+  .mission_and_vision {
+    padding: 20px;
+    flex-direction: column;
+  }
+  .mission_and_vision > div {
+    padding: 10px;
+  }
+  .image > img {
+    height: block;
+    display: none;
+    width: block;
+  }
+  .Footer {
+    display: block;
+    padding-top: 2vh;
+    padding: 0;
+    padding-left: 0;
+    justify-content: 0;
+    font-size: 1em;
+  }
+  .About {
+    padding: block;
+  }
+  .About > div {
+    padding: block;
+  }
+
+  .About-sectionTwo {
+    padding-top: block;
+  }
+  .About > div {
+    padding: block;
+  }
+  .text {
+    word-spacing: normal;
+    letter-spacing: normal;
+  }
+  .text > div {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+  }
+  .Comments {
+    flex-direction: column;
+  }
+  .toggle-button {
+    display: flex;
+  }
+  .Right-side {
+    display: none;
+  }
+  .Right-side {
+    flex-direction: column;
+    width: 100%;
+  }
+  .Header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .Link-wrapper {
+    text-align: center;
+    width: 100%;
+  }
+  .Right-side.active {
+    display: flex;
+  }
+  .Link-wrapper > .link > a {
+    color: black;
+  }
+  .Link-wrapper .link :hover {
+    border-bottom: 1px solid black;
+    background-color: whitesmoke;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .text {
+    font-size: 1.5em;
+    height: 30vh;
+    width: 100%;
+  }
+  .text > p {
+    margin-top: none;
+    padding-top: none;
+  }
+  .Footer {
+    justify-content: flex-start;
+    padding: 0;
+    padding-top: 0;
+    padding-left: 0;
+    font-size: 0.6em;
+  }
+  .Comments {
+    font-size: 0.6em;
+  }
+  .text > div {
+    padding-top: 3vh;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .text > .launder-btn {
+    padding-top: 5vh;
+  }
+  .toggle-button {
+    display: flex;
+    padding-top: 20px;
+  }
+  .Right-side {
+    display: none;
+  }
+  .Right-side {
+    background-color: whitesmoke;
+    flex-direction: column;
+    width: 100%;
+  }
+  .Header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .Link-wrapper {
+    text-align: center;
+    width: 100%;
+  }
+  .Right-side.active {
+    display: flex;
+  }
+  .Link-wrapper > .link > a {
+    color: black;
+  }
+  .Link-wrapper .link :hover {
+    border-bottom: 1px solid black;
+    background-color: whitesmoke;
+  }
+  .grids > div {
+    font-size: 0.9em;
+  }
+  .grids > p {
+    font-size: 0.6em;
+  }
+  .Welcome {
+    width: 100%;
+  }
+  #About_page {
+    font-size: 0.6em;
+  }
+  .First > div {
+    padding: 20px;
+    margin-left: 20px;
+  }
+}
